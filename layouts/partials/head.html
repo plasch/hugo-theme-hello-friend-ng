@@ -69,6 +69,6 @@
 {{- end }}
 
 <!-- Google Analytics internal template -->
-{{- if .Site.GoogleAnalytics }}
-    {{ template "_internal/google_analytics.html" . }}
-{{- end}}
+{{ if .Site.Params.GoogleAnalytics }}
+    {{ partial "analytics-gtag.html" . }}
+{{ end }}

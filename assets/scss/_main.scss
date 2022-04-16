@@ -1,7 +1,7 @@
 html {
   box-sizing: border-box;
-  line-height: 1.6;
-  letter-spacing: 0.06em;
+  line-height: 1.54;
+  letter-spacing: 0.01em;
   scroll-behavior: smooth;
 }
 
@@ -231,10 +231,12 @@ code {
 
   [data-theme=dark] & {
     background: $dark-background-secondary;
+    color: #e68989;
   }
 
   [data-theme=light] & {
     background: $light-background-secondary;
+    color: #ff5151;
   }
 }
 
@@ -245,6 +247,7 @@ pre {
 
   [data-theme=light] & {
     background-color: $light-background-secondary;
+    // background-color: $dark-background-secondary;
   }
 
   padding: 10px 10px 10px 20px;
@@ -278,7 +281,8 @@ pre {
     }
   
     [data-theme=light] & {
-      color: #ccc;
+      // color: #ccc;
+      color: #3b3d42;
     }
   }
 }
